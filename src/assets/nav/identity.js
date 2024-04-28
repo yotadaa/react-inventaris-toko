@@ -1,9 +1,9 @@
-import dashboardIcon from './nav/dashboard.png';
-import itemIcon from './nav/product.png';
-import userIcon from './user.png';
-import settingsIcon from './settings.png';
-import inboundIcon from './inbox.png';
-import outboundIcon from './unpacking.png';
+import dashboardIcon from './dashboard.png';
+import itemIcon from './product.png';
+import userIcon from '../user.png';
+import settingsIcon from '../settings.png';
+import inboundIcon from '../inbox.png';
+import outboundIcon from '../unpacking.png';
 
 export const menu = [
     {

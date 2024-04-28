@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Context from './context';
 import Main from '../components/main';
+import RegisterPage from '../components/register';
 
 const Root = () => {
 
@@ -42,9 +43,11 @@ const Root = () => {
         rightNav, setRightNav, properties, setProperties
     }
 
+    const [isAuth, setIsAuth] = useState(false);
+
     return (
         <Context.Provider value={contextValue}>
-            <Main />
+            {isAuth ? <Main /> : <RegisterPage />}
         </Context.Provider>
     )
 };

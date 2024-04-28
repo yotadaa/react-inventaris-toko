@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { menu, storeCurrentMenu, retrieveCurrentMenu } from '../../assets/identity';
+import { menu, storeCurrentMenu, retrieveCurrentMenu } from '../../assets/nav/identity';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import logoutIcon from '../../assets/logout.png';
@@ -57,7 +57,7 @@ function NavList({ isShrunk, pinNav }) {
                     </Link>
                 ))}
                 <motion.li
-                    className={`p-[5px] cursor-pointer h-10 rounded-full flex items-center mb-2 bg-red-400`}
+                    className={`p-[5px] cursor-pointer h-10 rounded-full flex items-center mb-2 `}
                     style={{
                         gap: 10,
                     }}
@@ -67,7 +67,7 @@ function NavList({ isShrunk, pinNav }) {
                         opacity: 1,
                     }}
                     whileHover={{
-                        opacity: 0.8
+                        backgroundColor: '#F87171',
                     }}
                 >
                     <motion.img
